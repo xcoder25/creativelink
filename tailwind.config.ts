@@ -124,6 +124,11 @@ export default {
           '0%': { backgroundPosition: '50% 200%' },
           '100%': { backgroundPosition: '50% -100%' },
         },
+        'pulse': {
+          '50%': {
+            opacity: '0.5',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -132,6 +137,7 @@ export default {
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
         'gradient-wave-vertical': 'gradient-wave-vertical 8s linear infinite',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },

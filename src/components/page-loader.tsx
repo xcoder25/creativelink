@@ -40,7 +40,7 @@ export default function PageLoader({ children }: { children: React.ReactNode }) 
                 alt="Creativelink loading..." 
                 width={80} 
                 height={80} 
-                className="rounded-md animate-spin"
+                className="rounded-md animate-pulse"
             />
             <span className="font-headline text-2xl font-bold">Creativelink</span>
         </div>
