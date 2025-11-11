@@ -125,6 +125,11 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'gradient-wave-vertical': {
+          '0%': { backgroundPosition: '50% 100%' },
+          '50%': { backgroundPosition: '50% 0%' },
+          '100%': { backgroundPosition: '50% 100%' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -133,6 +138,7 @@ export default {
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
         'gradient-wave': 'gradient-wave 4s ease infinite',
+        'gradient-wave-vertical': 'gradient-wave-vertical 4s ease-in-out infinite',
       },
     },
   },

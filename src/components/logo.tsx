@@ -12,7 +12,7 @@ export default function Logo() {
         className="rounded-sm"
       />
       <span className="font-headline text-4xl font-bold">
-        <span className="bg-gradient-to-r from-primary via-orange-400 to-primary bg-clip-text text-transparent bg-[length:400%_100%] animate-gradient-wave">
+        <span className="bg-gradient-to-t from-primary via-orange-400 to-primary bg-[length:100%_200%] bg-clip-text text-transparent animate-gradient-wave-vertical">
           Creativelink
         </span>
       </span>
