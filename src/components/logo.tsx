@@ -7,11 +7,11 @@ export default function Logo() {
       <Image 
         src="/crea_logo.jpeg" 
         alt="Creativelink logo" 
-        width={24} 
-        height={24} 
+        width={32} 
+        height={32} 
         className="rounded-sm"
       />
-      <span className="font-headline text-2xl font-bold">Creativelink</span>
+      <span className="font-headline text-3xl font-bold">Creativelink</span>
     </Link>
   );
 }
