@@ -1,7 +1,7 @@
 'use client';
 
-import { useActionState, useFormStatus } from 'react';
-import { useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm, type FormState } from '@/app/contact/actions';
 import { Button } from './ui/button';
