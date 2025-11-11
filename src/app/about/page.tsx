@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import SkillsChart from '@/components/skills-chart';
 import { skills } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import imageData from '@/lib/placeholder-images.json';
+
+const { placeholderImages: PlaceHolderImages } = imageData;
 
 export const metadata = {
   title: 'About Me | Design Noir',
