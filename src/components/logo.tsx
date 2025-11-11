@@ -12,7 +12,7 @@ export default function Logo() {
         className="rounded-sm"
       />
       <span className="font-headline text-4xl font-bold">
-        <span className="relative inline-block text-foreground before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary before:via-orange-400 before:to-primary before:bg-[length:400%_100%] before:animate-gradient-wave before:content-[''] before:[-webkit-mask-image:linear-gradient(white,transparent)] before:[mask-image:linear-gradient(white,transparent)]">
+        <span className="bg-gradient-to-r from-primary via-orange-400 to-primary bg-clip-text text-transparent bg-[length:400%_100%] animate-gradient-wave">
           Creativelink
         </span>
       </span>
