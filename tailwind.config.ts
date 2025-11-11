@@ -131,7 +131,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
-        'gradient-wave-vertical': 'gradient-wave-vertical 4s linear infinite',
+        'gradient-wave-vertical': 'gradient-wave-vertical 8s linear infinite',
       },
     },
   },
