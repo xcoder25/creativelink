@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
@@ -18,9 +18,10 @@ export default function PageLoader({ children }: { children: React.ReactNode }) 
     }
 
     setLoading(true);
+    // Show loader for a minimum of 5 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); 
+    }, 5000); 
 
     return () => clearTimeout(timer);
   }, [pathname, searchParams]);
