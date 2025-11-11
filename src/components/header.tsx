@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import Logo from './logo';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -27,10 +26,10 @@ export default function Header() {
       <Link href={href} passHref>
         <span
           className={cn(
-            'relative text-lg font-medium text-muted-foreground transition-colors hover:text-foreground md:text-base',
+            'block w-full text-center md:w-auto md:inline-block relative text-lg font-medium text-muted-foreground transition-colors hover:text-foreground md:text-base py-4 md:py-0 border-b md:border-none',
             isActive && 'text-foreground',
-            'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-center',
-            isActive && 'after:scale-x-100'
+            'md:after:absolute md:after:bottom-[-4px] md:after:left-0 md:after:h-[2px] md:after:w-full md:after:bg-primary md:after:scale-x-0 md:after:transition-transform md:after:duration-300 md:after:ease-in-out md:after:origin-center',
+            isActive && 'md:after:scale-x-100'
           )}
           onClick={() => setIsMobileMenuOpen(false)}
         >
@@ -52,22 +51,25 @@ export default function Header() {
         </nav>
 
         <div className="md:hidden">
-          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="grid gap-6 p-6 pt-16">
-                {navLinks.map((link) => (
-                  <NavLink key={link.href} {...link} />
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <X /> : <Menu />}
+            <span className="sr-only">Toggle menu</span>
+          </Button>
         </div>
+      </div>
+      
+      {/* Mobile dropdown menu */}
+      <div 
+        className={cn(
+          "absolute w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+          isMobileMenuOpen ? 'max-h-96 border-t' : 'max-h-0'
+        )}
+      >
+        <nav className="flex flex-col items-center">
+          {navLinks.map((link) => (
+            <NavLink key={link.href} {...link} />
+          ))}
+        </nav>
       </div>
     </header>
   );
