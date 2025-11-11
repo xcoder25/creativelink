@@ -120,15 +120,9 @@ export default {
             transform: "rotate(360deg)",
           },
         },
-        'gradient-wave': {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
-        },
         'gradient-wave-vertical': {
-          '0%': { backgroundPosition: '50% 100%' },
-          '50%': { backgroundPosition: '50% 0%' },
-          '100%': { backgroundPosition: '50% 100%' },
+          '0%': { backgroundPosition: '50% 200%' },
+          '100%': { backgroundPosition: '50% -100%' },
         },
       },
       animation: {
@@ -137,8 +131,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
-        'gradient-wave': 'gradient-wave 4s ease infinite',
-        'gradient-wave-vertical': 'gradient-wave-vertical 4s ease-in-out infinite',
+        'gradient-wave-vertical': 'gradient-wave-vertical 4s linear infinite',
       },
     },
   },
