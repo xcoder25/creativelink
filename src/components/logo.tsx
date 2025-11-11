@@ -11,7 +11,11 @@ export default function Logo() {
         height={36} 
         className="rounded-sm"
       />
-      <span className="font-headline text-4xl font-bold">Creativelink</span>
+      <span className="font-headline text-4xl font-bold">
+        <span className="bg-gradient-to-r from-primary via-orange-400 to-primary bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-move">
+          Creativelink
+        </span>
+      </span>
     </Link>
   );
 }
