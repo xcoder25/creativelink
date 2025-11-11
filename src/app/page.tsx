@@ -18,10 +18,12 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 text-center">
         <div className="animate-fade-in-up">
           <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-            Innovate. Connect. Inspire.
+            <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.1s' }}>Innovate.</span>
+            <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.2s' }}>Connect.</span>
+            <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.3s' }}>Inspire.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            As a creative design agency, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.
+            As a creative graphic designer, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
