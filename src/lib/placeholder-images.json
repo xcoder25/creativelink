@@ -1,3 +1,100 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "designer-portrait",
+      "description": "Portrait of the graphic designer.",
+      "imageUrl": "https://images.unsplash.com/photo-1654707264308-286492443b37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNpZ25lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mjg4MzUyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "designer portrait"
+    },
+    {
+      "id": "project-cover-zenith",
+      "description": "Cover image for Project Zenith.",
+      "imageUrl": "https://images.unsplash.com/photo-1711779321922-532dc4e205e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2Mjc3ODI5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract branding"
+    },
+    {
+      "id": "project-cover-nomad",
+      "description": "Cover image for Project Nomad.",
+      "imageUrl": "https://images.unsplash.com/photo-1671663707612-c60dd5d7501b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjB3ZWJzaXRlfGVufDB8fHx8MTc2Mjg3NDM2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel website"
+    },
+    {
+      "id": "project-cover-cyberglow",
+      "description": "Cover image for Project CyberGlow.",
+      "imageUrl": "https://images.unsplash.com/photo-1762279388979-6a430989284c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuZW9uJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2Mjg5NjU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "neon illustration"
+    },
+    {
+      "id": "project-cover-eco-foods",
+      "description": "Cover image for Eco Foods project.",
+      "imageUrl": "https://images.unsplash.com/photo-1575833949203-ade5a03eb82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxvcmdhbmljJTIwcGFja2FnaW5nfGVufDB8fHx8MTc2Mjg5NjU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organic packaging"
+    },
+    {
+      "id": "zenith-1",
+      "description": "Zenith project image 1",
+      "imageUrl": "https://images.unsplash.com/photo-1700887938966-01f0450aee8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBpZGVudGl0eXxlbnwwfHx8fDE3NjI4MzE0OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate identity"
+    },
+    {
+      "id": "zenith-2",
+      "description": "Zenith project image 2",
+      "imageUrl": "https://images.unsplash.com/photo-1645658043538-fc2bb1702cfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGd1aWRlbGluZXN8ZW58MHx8fHwxNzYyODk2NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brand guidelines"
+    },
+    {
+      "id": "nomad-1",
+      "description": "Nomad project image 1",
+      "imageUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWJzaXRlJTIwbW9ja3VwfGVufDB8fHx8MTc2Mjg2OTc0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website mockup"
+    },
+    {
+      "id": "nomad-2",
+      "description": "Nomad project image 2",
+      "imageUrl": "https://images.unsplash.com/photo-1526038335545-4b96864eaee7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2JpbGUlMjB1aXxlbnwwfHx8fDE3NjI3OTg1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile ui"
+    },
+    {
+      "id": "cyberglow-1",
+      "description": "CyberGlow project image 1",
+      "imageUrl": "https://images.unsplash.com/photo-1759885697855-52d11c41b19b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmdXR1cmlzdGljJTIwY2hhcmFjdGVyfGVufDB8fHx8MTc2Mjg3Mjg2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic character"
+    },
+    {
+      "id": "cyberglow-2",
+      "description": "CyberGlow project image 2",
+      "imageUrl": "https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwYXJ0fGVufDB8fHx8MTc2MjgzNTA5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital art"
+    },
+    {
+      "id": "eco-foods-1",
+      "description": "Eco Foods project image 1",
+      "imageUrl": "https://images.unsplash.com/photo-1589010588553-46e8e7c21788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmb29kJTIwcGFja2FnaW5nfGVufDB8fHx8MTc2Mjg5NjU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "food packaging"
+    },
+    {
+      "id": "eco-foods-2",
+      "description": "Eco Foods project image 2",
+      "imageUrl": "https://images.unsplash.com/photo-1498075702571-ecb018f3752d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsb2dvJTIwZGVzaWdufGVufDB8fHx8MTc2Mjg2OTc0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo design"
+    },
+    {
+      "id": "avatar-jane-doe",
+      "description": "Avatar for Jane Doe.",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mjg4ODYyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "avatar-john-smith",
+      "description": "Avatar for John Smith.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjI4NTg1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "avatar-emily-white",
+      "description": "Avatar for Emily White.",
+      "imageUrl": "https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2Mjg0NjIxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    }
+  ]
 }
