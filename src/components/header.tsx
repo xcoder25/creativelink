@@ -65,7 +65,7 @@ export default function Header() {
           isMobileMenuOpen ? 'max-h-96 border-t' : 'max-h-0 border-t-0'
         )}
       >
-        <nav className="flex flex-col px-4 divide-y divide-border/40">
+        <nav className="flex flex-col px-4">
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
