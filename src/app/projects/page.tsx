@@ -4,7 +4,7 @@ import CategoryFilters from '@/components/category-filters';
 import type { ProjectCategory } from '@/lib/types';
 
 export const metadata = {
-  title: 'Projects | Design Noir',
+  title: 'Projects | Creativelink',
   description: 'Explore a collection of branding, web design, and illustration projects.',
 };
 
@@ -24,10 +24,10 @@ export default function ProjectsPage({
     <div className="container mx-auto px-4 py-16">
       <header className="text-center mb-12 animate-fade-in-up">
         <h1 className="font-headline text-5xl font-bold tracking-tight md:text-6xl">
-          My Work
+          Our Work
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-          A showcase of my passion for creating beautiful and functional designs.
+          A showcase of our passion for creating beautiful and functional designs.
         </p>
       </header>
       

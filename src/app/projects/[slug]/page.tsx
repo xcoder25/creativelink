@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!project) {
     return {
-      title: 'Project Not Found | Design Noir',
+      title: 'Project Not Found | Creativelink',
     };
   }
 
   return {
-    title: `${project.title} | Design Noir`,
+    title: `${project.title} | Creativelink`,
     description: project.summary,
   };
 }

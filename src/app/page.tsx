@@ -18,15 +18,15 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 text-center">
         <div className="animate-fade-in-up">
           <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-            Designing Worlds, One Pixel at a Time
+            Innovate. Connect. Inspire.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            I'm a graphic designer passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.
+            We are a creative design agency passionate about creating stunning visuals and compelling brand identities. Explore our work and let's create something beautiful together.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/projects">
-                View My Work <ArrowRight />
+                View Our Work <ArrowRight />
               </Link>
             </Button>
             <Button asChild size="lg" variant="secondary">
@@ -62,7 +62,7 @@ export default function Home() {
 
       <section id="testimonials" className="container mx-auto px-4 py-20">
         <h2 className="mb-12 text-center font-headline text-4xl font-bold">
-          What My Clients Say
+          What Our Clients Say
         </h2>
         <TestimonialCarousel testimonials={testimonials} />
       </section>
@@ -82,13 +82,13 @@ export default function Home() {
             </div>
           )}
           <div className="animate-fade-in-up">
-            <h2 className="font-headline text-4xl font-bold">About Me</h2>
+            <h2 className="font-headline text-4xl font-bold">About Us</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              With over a decade of experience in graphic design, I specialize in branding and web design. My philosophy is to combine aesthetic appeal with strategic thinking to create designs that are not only beautiful but also effective.
+              With over a decade of experience in graphic design, we specialize in branding and web design. Our philosophy is to combine aesthetic appeal with strategic thinking to create designs that are not only beautiful but also effective.
             </p>
             <Button asChild className="mt-6" variant="link">
               <Link href="/about">
-                Learn More About Me <ArrowRight />
+                Learn More About Us <ArrowRight />
               </Link>
             </Button>
           </div>

@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
         <Logo />
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Design Noir. All rights reserved.
+          &copy; {new Date().getFullYear()} Creativelink. All rights reserved.
         </p>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>

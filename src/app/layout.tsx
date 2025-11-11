@@ -6,8 +6,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Design Noir | Graphic Designer Portfolio',
-  description: 'A portfolio for a world-class graphic designer, blending dark themes with vibrant accents.',
+  title: 'Creativelink | Innovate. Connect. Inspire.',
+  description: 'A portfolio for Creativelink, a top-tier creative design agency.',
 };
 
 export default function RootLayout({
