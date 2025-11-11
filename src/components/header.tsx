@@ -44,13 +44,13 @@ export default function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Logo />
 
-        <nav className="hidden items-center space-x-6 md:flex">
+        <nav className="hidden items-center space-x-6 lg:flex">
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
         </nav>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Button
             variant="ghost"
             size="icon"
@@ -63,7 +63,7 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute top-16 left-0 w-full animate-in fade-in-20 slide-in-from-top-4 md:hidden">
+        <div className="absolute top-16 left-0 w-full animate-in fade-in-20 slide-in-from-top-4 lg:hidden">
           <div className="grid gap-6 bg-background p-6 shadow-md">
             {navLinks.map((link) => (
               <NavLink key={link.href} {...link} />
