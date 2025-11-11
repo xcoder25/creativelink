@@ -120,7 +120,7 @@ export default {
             transform: "rotate(360deg)",
           },
         },
-        'gradient-move': {
+        'gradient-wave': {
           '0%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
@@ -132,7 +132,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
-        'gradient-move': 'gradient-move 4s ease infinite',
+        'gradient-wave': 'gradient-wave 4s ease infinite',
       },
     },
   },
