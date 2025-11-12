@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Download } from 'lucide-react';
 import { useState } from 'react';
@@ -8,6 +7,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import Logo from './logo';
+import LoadingLink from './loading-link';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -24,7 +24,7 @@ export default function Header() {
   const NavLink = ({ href, label }: { href: string; label: string }) => {
     const isActive = pathname === href;
     return (
-      <Link href={href} passHref>
+      <LoadingLink href={href} passHref>
         <span
           className={cn(
             'block w-full text-left md:text-center md:w-auto md:inline-block relative font-medium text-muted-foreground transition-colors hover:text-foreground md:text-base py-2 md:py-0 text-base',
@@ -36,7 +36,7 @@ export default function Header() {
         >
           {label}
         </span>
-      </Link>
+      </LoadingLink>
     );
   };
 
@@ -52,10 +52,10 @@ export default function Header() {
             ))}
             <NavLink {...contactLink} />
             <Button asChild variant="outline" size="sm">
-              <Link href="/THOMAS VP CV.pdf" target="_blank" download>
+              <LoadingLink href="/THOMAS VP CV.pdf" target="_blank" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
-              </Link>
+              </LoadingLink>
             </Button>
           </nav>
           
@@ -84,10 +84,10 @@ export default function Header() {
            </div>
           <div className="mt-2 border-t pt-2">
              <Button asChild variant="ghost" className="w-full justify-start">
-                <Link href="/THOMAS VP CV.pdf" target="_blank" download>
+                <LoadingLink href="/THOMAS VP CV.pdf" target="_blank" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
-                </Link>
+                </LoadingLink>
               </Button>
           </div>
         </nav>

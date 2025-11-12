@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import LoadingLink from '@/components/loading-link';
 
 export default function NotFound() {
   return (
@@ -11,7 +12,7 @@ export default function NotFound() {
           Sorry, the page you are looking for does not exist.
         </p>
         <Button asChild className="mt-8">
-          <Link href="/">Go back to Home</Link>
+          <LoadingLink href="/">Go back to Home</LoadingLink>
         </Button>
       </div>
     </div>

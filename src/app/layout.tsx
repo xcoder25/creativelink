@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import PageLoader from '@/components/page-loader';
+import { LoadingProvider } from '@/context/loading-context';
 
 export const metadata: Metadata = {
   title: 'Creativelink | Innovate. Connect. Inspire.',
@@ -29,11 +30,13 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
-        <PageLoader>
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </PageLoader>
+        <LoadingProvider>
+          <PageLoader>
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </PageLoader>
+        </LoadingProvider>
         <Toaster />
       </body>
     </html>

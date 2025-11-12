@@ -9,6 +9,7 @@ import ProjectCard from '@/components/project-card';
 import TestimonialCarousel from '@/components/testimonial-carousel';
 import imageData from '@/lib/placeholder-images.json';
 import Typewriter from '@/components/typewriter';
+import LoadingLink from '@/components/loading-link';
 
 const { placeholderImages } = imageData;
 
@@ -30,12 +31,12 @@ export default function Home() {
           </div>
           <div className="mt-8 flex justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <Button asChild size="lg">
-              <Link href="/projects">
+              <LoadingLink href="/projects">
                 View My Work <ArrowRight />
-              </Link>
+              </LoadingLink>
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Get in Touch</Link>
+              <LoadingLink href="/contact">Get in Touch</LoadingLink>
             </Button>
           </div>
         </div>
@@ -59,7 +60,7 @@ export default function Home() {
           </div>
           <div className="mt-12 text-center">
             <Button asChild variant="outline">
-              <Link href="/projects">View All Projects</Link>
+              <LoadingLink href="/projects">View All Projects</LoadingLink>
             </Button>
           </div>
         </div>
@@ -92,9 +93,9 @@ export default function Home() {
               With over a decade of experience in graphic design, I specialize in branding and web design. My philosophy is to combine aesthetic appeal with strategic thinking to create designs that are not only beautiful but also effective.
             </p>
             <Button asChild className="mt-6" variant="link">
-              <Link href="/about">
+              <LoadingLink href="/about">
                 Learn More About Me <ArrowRight />
-              </Link>
+              </LoadingLink>
             </Button>
           </div>
         </div>

@@ -1,35 +1,23 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { useLoading } from '@/context/loading-context';
 
 export default function PageLoader({ children }: { children: React.ReactNode }) {
-  const [loading, setLoading] = useState(false);
-  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const { loading, setLoading, isInitialLoad, setIsInitialLoad } = useLoading();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // This effect runs only on the client.
-    // By setting isInitialLoad to false here, we ensure that any
-    // logic dependent on it only runs client-side, avoiding hydration errors.
     if (isInitialLoad) {
       setIsInitialLoad(false);
-      return;
     }
+    setLoading(false);
+  }, [pathname, searchParams, setLoading, isInitialLoad, setIsInitialLoad]);
 
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500); // Reduced loader time for better user experience
-
-    return () => clearTimeout(timer);
-  }, [pathname, searchParams]);
-  
-  // On the server and during initial client render, don't show the loader overlay.
-  // The loader logic will only kick in on subsequent client-side navigations.
   if (isInitialLoad) {
     return <>{children}</>;
   }

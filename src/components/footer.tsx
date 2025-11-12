@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import Logo from './logo';
 import { Button } from './ui/button';
+import LoadingLink from './loading-link';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -39,9 +40,9 @@ export default function Footer() {
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <LoadingLink href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   {link.label}
-                </Link>
+                </LoadingLink>
               </li>
             ))}
           </ul>
