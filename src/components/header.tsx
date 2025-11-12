@@ -13,8 +13,9 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
 ];
+
+const contactLink = { href: '/contact', label: 'Contact' };
 
 export default function Header() {
   const pathname = usePathname();
@@ -49,17 +50,15 @@ export default function Header() {
             {navLinks.map((link) => (
               <NavLink key={link.href} {...link} />
             ))}
-          </nav>
-          
-          <div className="hidden md:block">
-            <Button asChild variant="outline" size="sm">
+             <Button asChild variant="outline" size="sm">
               <Link href="/cv.pdf" target="_blank" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Link>
             </Button>
-          </div>
-
+            <NavLink {...contactLink} />
+          </nav>
+          
           <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <X /> : <Menu />}
@@ -88,6 +87,9 @@ export default function Header() {
                 </Link>
               </Button>
           </div>
+           <div className="border-t pt-2">
+            <NavLink {...contactLink} />
+           </div>
         </nav>
       </div>
     </header>
