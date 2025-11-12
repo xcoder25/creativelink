@@ -88,11 +88,6 @@ export default function ProjectDetailsPage({ params }: { params: { slug: string 
       <div className="mx-auto max-w-4xl">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div className="md:col-span-2">
-            <section className="mb-8">
-              <h2 className="font-headline text-3xl font-bold">About the Project</h2>
-              <p className="mt-4 text-lg text-muted-foreground">{project.description}</p>
-            </section>
-            
             <section>
               <h3 className="font-headline text-2xl font-bold">AI-Generated Summary</h3>
                <div className="mt-4 rounded-lg border bg-secondary p-4">
