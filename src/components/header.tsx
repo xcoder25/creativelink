@@ -50,13 +50,13 @@ export default function Header() {
             {navLinks.map((link) => (
               <NavLink key={link.href} {...link} />
             ))}
-             <Button asChild variant="outline" size="sm">
+            <NavLink {...contactLink} />
+            <Button asChild variant="outline" size="sm">
               <Link href="/cv.pdf" target="_blank" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Link>
             </Button>
-            <NavLink {...contactLink} />
           </nav>
           
           <div className="md:hidden">
@@ -79,6 +79,9 @@ export default function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
+           <div className="border-t pt-2">
+            <NavLink {...contactLink} />
+           </div>
           <div className="mt-2 border-t pt-2">
              <Button asChild variant="ghost" className="w-full justify-start">
                 <Link href="/cv.pdf" target="_blank" download>
@@ -87,9 +90,6 @@ export default function Header() {
                 </Link>
               </Button>
           </div>
-           <div className="border-t pt-2">
-            <NavLink {...contactLink} />
-           </div>
         </nav>
       </div>
     </header>
