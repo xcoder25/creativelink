@@ -22,10 +22,10 @@ export default function Home() {
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.2s' }}>Connect.</span>
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.3s' }}>Inspire.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             As a creative graphic designer, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <Button asChild size="lg">
               <Link href="/projects">
                 View My Work <ArrowRight />
