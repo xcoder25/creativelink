@@ -1,7 +1,10 @@
 
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { featuredProjects, testimonials } from '@/lib/data';
@@ -10,16 +13,32 @@ import TestimonialCarousel from '@/components/testimonial-carousel';
 import imageData from '@/lib/placeholder-images.json';
 import Typewriter from '@/components/typewriter';
 import LoadingLink from '@/components/loading-link';
+import { cn } from '@/lib/utils';
 
 const { placeholderImages } = imageData;
 
-const WavyText = ({ text, delayStep = 0.07 }: { text: string; delayStep?: number }) => {
+const WavyText = ({ text, delayStep = 0.07, totalDuration = 12 }: { text: string; delayStep?: number, totalDuration?: number }) => {
+  const [animationKey, setAnimationKey] = useState(0);
+  const totalDelay = (text.length - 1) * delayStep;
+  const cycleDuration = (totalDuration + totalDelay) * 1000;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationKey(prev => prev + 1);
+    }, cycleDuration);
+
+    return () => clearInterval(interval);
+  }, [cycleDuration]);
+
   return (
     <>
       {text.split('').map((char, index) => (
         <span
-          key={`${char}-${index}`}
-          className="inline-block animate-fluid-gradient"
+          key={`${char}-${index}-${animationKey}`}
+          className={cn(
+            'inline-block fluid-gradient',
+             'animate-fluid-gradient'
+          )}
           style={{ animationDelay: `${index * delayStep}s` }}
         >
           {char === ' ' ? '\u00A0' : char}
