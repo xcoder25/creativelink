@@ -30,7 +30,7 @@ export const projects: Project[] = [
     testimonial: {
       text: "The new branding has been transformative. It perfectly captures our ethos and has been incredibly well-received by our clients. The team's creativity and strategic approach were exceptional.",
       author: 'Jane Doe',
-      company: 'CEO, Zenith Financials',
+      company: 'CEO, CASTHOUSE PRODUCTIONS',
     },
     aiPrompt: {
       projectName: 'Zenith Financials Rebranding',
@@ -468,7 +468,7 @@ export const testimonials: Testimonial[] = [
     id: 1,
     text: "Working with them was a dream. They took our vague ideas and turned them into a brand identity that was more powerful than we could have ever imagined. The results speak for themselves.",
     author: 'Jane Doe',
-    company: 'CEO, Zenith Financials',
+    company: 'CEO, CASTHOUSE PRODUCTIONS',
     avatar: getImage('avatar-jane-doe'),
   },
   {
