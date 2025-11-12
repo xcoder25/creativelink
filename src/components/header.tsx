@@ -52,7 +52,7 @@ export default function Header() {
             ))}
             <NavLink {...contactLink} />
             <Button asChild variant="outline" size="sm">
-              <Link href="/cv.pdf" target="_blank" download>
+              <Link href="/THOMAS VP CV.pdf" target="_blank" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Link>
@@ -84,7 +84,7 @@ export default function Header() {
            </div>
           <div className="mt-2 border-t pt-2">
              <Button asChild variant="ghost" className="w-full justify-start">
-                <Link href="/cv.pdf" target="_blank" download>
+                <Link href="/THOMAS VP CV.pdf" target="_blank" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </Link>
