@@ -3,13 +3,13 @@
     {
       "id": "designer-portrait",
       "description": "Portrait of the graphic designer.",
-      "imageUrl": "https://images.unsplash.com/photo-1654707264308-286492443b37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNpZ25lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mjg4MzUyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/me.jpg",
       "imageHint": "designer portrait"
     },
     {
       "id": "project-cover-zenith",
       "description": "Cover image for Project Zenith.",
-      "imageUrl": "https://images.unsplash.com/photo-1711779321922-532dc4e205e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2Mjc3ODI5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/srfit.jpeg",
       "imageHint": "abstract branding"
     },
     {

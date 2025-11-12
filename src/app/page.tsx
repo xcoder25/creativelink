@@ -43,7 +43,7 @@ export default function Home() {
           <h2 className="mb-12 text-center font-headline text-4xl font-bold">
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {featuredProjects.map((project, index) => (
               <div
                 key={project.slug}
