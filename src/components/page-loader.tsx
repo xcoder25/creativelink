@@ -36,13 +36,12 @@ export default function PageLoader({ children }: { children: React.ReactNode }) 
       >
         <div className="flex flex-col items-center gap-4">
             <Image 
-                src="/crea_logo.jpeg" 
+                src="/my_logo.png" 
                 alt="Creativelink loading..." 
-                width={80} 
-                height={80} 
+                width={120} 
+                height={50} 
                 className="rounded-md animate-pulse"
             />
-            <span className="font-headline text-2xl font-bold">Creativelink</span>
         </div>
       </div>
       {children}

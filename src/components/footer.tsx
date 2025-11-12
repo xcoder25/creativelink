@@ -31,57 +31,45 @@ export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-secondary/50">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-start md:text-left md:gap-16">
-          <div className="flex flex-col items-center md:items-start gap-4">
+        <div className="flex flex-col items-center justify-center gap-6 text-center">
+          <div className="flex flex-col items-center gap-4">
             <Logo />
-            <p className="max-w-xs text-sm text-muted-foreground">
-              A creative design portfolio focused on innovation, connection, and inspiration.
-            </p>
           </div>
           
-          <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:ml-auto">
-            <div className="flex flex-col items-center md:items-start">
-              <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
-              <ul className="mt-2 space-y-1">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-            <div className="flex flex-col items-center md:items-start">
-              <h3 className="font-headline text-lg font-semibold">Connect</h3>
-              <p className="mt-2 text-sm text-muted-foreground">hello@creativelink.com</p>
-              <div className="mt-2 flex items-center gap-1">
-                <Button variant="ghost" size="icon" asChild>
-                  <Link href="#" aria-label="Facebook">
-                    <Facebook />
-                  </Link>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <Link href="#" aria-label="Instagram">
-                    <Instagram />
-                  </Link>
-                </Button>
-                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="#" aria-label="WhatsApp">
-                    <WhatsAppIcon />
-                  </Link>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <Link href="#" aria-label="LinkedIn">
-                    <Linkedin />
-                  </Link>
-                </Button>
-              </div>
-            </div>
+          <div className="flex items-center gap-1">
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="#" aria-label="Facebook">
+                <Facebook />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="#" aria-label="Instagram">
+                <Instagram />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="#" aria-label="WhatsApp">
+                <WhatsAppIcon />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="#" aria-label="LinkedIn">
+                <Linkedin />
+              </Link>
+            </Button>
           </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-6 border-t border-border/40 pt-6 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Creativelink. All rights reserved.
         </div>
       </div>
