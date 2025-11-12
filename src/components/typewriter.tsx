@@ -9,19 +9,16 @@ interface TypewriterProps {
 
 export default function Typewriter({ text, speed = 50 }: TypewriterProps) {
   const [displayedText, setDisplayedText] = useState('');
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
-    setDisplayedText('');
-    setIsTypingComplete(false);
+    setDisplayedText(''); // Reset on text change
     let i = 0;
     const intervalId = setInterval(() => {
       if (i < text.length) {
-        setDisplayedText((prev) => prev + text.charAt(i));
+        setDisplayedText((prev) => text.substring(0, i + 1));
         i++;
       } else {
         clearInterval(intervalId);
-        setIsTypingComplete(true);
       }
     }, speed);
 
