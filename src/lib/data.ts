@@ -112,15 +112,15 @@ export const projects: Project[] = [
     aiPrompt: { projectName: 'Innovatech Branding', designChoices: 'Minimalist and modern.', outcomes: 'Successful brand launch.' }
   },
   {
-    slug: 'e-commerce-redesign',
-    title: 'E-commerce Redesign',
+    slug: 'e-commerce-branding',
+    title: 'E-commerce Branding',
     category: 'Branding',
     coverImage: getImage('p3'),
-    summary: "Complete redesign of an e-commerce platform's UI/UX to improve user flow and increase conversions.",
-    description: "A user-focused redesign to enhance the shopping experience.",
-    projectInfo: { client: 'Shopify Plus', year: 2024, services: 'UI/UX, Web Design' },
+    summary: "Complete branding for an e-commerce platform's UI/UX to improve user flow and increase conversions.",
+    description: "A user-focused branding to enhance the shopping experience.",
+    projectInfo: { client: 'Shopify Plus', year: 2024, services: 'UI/UX, Branding' },
     images: [getImage('p9'), getImage('p18'), getImage('p28')],
-    aiPrompt: { projectName: 'Shopify Plus Redesign', designChoices: 'Clean, intuitive, and mobile-first.', outcomes: 'Increased user engagement and sales.' }
+    aiPrompt: { projectName: 'Shopify Plus Branding', designChoices: 'Clean, intuitive, and mobile-first.', outcomes: 'Increased user engagement and sales.' }
   },
   {
     slug: 'fantasy-art-series',
@@ -147,7 +147,7 @@ export const projects: Project[] = [
   {
     slug: 'automotive-branding',
     title: 'Automotive Branding',
-    category: 'Branding',
+    category: 'Print Design',
     coverImage: getImage('p6'),
     summary: "Eye-catching vehicle wraps and car branding for a local business to increase brand visibility on the go.",
     description: "Mobile advertising through creative car branding.",
@@ -167,8 +167,8 @@ export const projects: Project[] = [
     aiPrompt: { projectName: 'Bistro Branding', designChoices: 'Warm, rustic, and inviting.', outcomes: 'Successful restaurant launch.' }
   },
   {
-    slug: 'app-ui-kit',
-    title: 'App UI Kit',
+    slug: 'app-ui-branding',
+    title: 'App UI Branding',
     category: 'Branding',
     coverImage: getImage('p21'),
     summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
