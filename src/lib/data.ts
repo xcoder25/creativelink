@@ -110,7 +110,7 @@ export const projects: Project[] = [
   {
     slug: 'logo-concept-2',
     title: 'Abstract Logo Concept',
-    category: 'Logos',
+    category: 'Flyers',
     coverImage: getImage('p2'),
     summary: 'A modern logo concept.',
     description: 'A modern logo concept.',
@@ -440,7 +440,7 @@ export const projects: Project[] = [
   {
     slug: 'app-icon-32',
     title: 'Mobile App Icon',
-    category: 'Logos',
+    category: 'Flyers',
     coverImage: getImage('p32'),
     summary: 'An app icon design.',
     description: 'An app icon design.',
