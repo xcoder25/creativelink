@@ -72,11 +72,11 @@
     animation: blink 0.7s infinite;
   }
   .animate-fluid-gradient {
-    background: linear-gradient(-45deg, #f59e0b, #fbbf24, #ea580c, #d97706);
-    background-size: 300% 300%;
+    background: linear-gradient(0deg, #f59e0b, #fbbf24, #ea580c, #d97706, white, white);
+    background-size: 100% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-flow 8s ease-in-out infinite;
+    animation: gradient-wave-vertical 8s ease-in-out infinite;
   }
 }
 
@@ -86,14 +86,11 @@
   }
 }
 
-@keyframes gradient-flow {
+@keyframes gradient-wave-vertical {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-position: 50% 200%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% -100%;
   }
 }
