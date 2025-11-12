@@ -129,6 +129,9 @@ export default {
             opacity: '0.5',
           },
         },
+        blink: {
+          '50%': { opacity: '0' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -138,6 +141,7 @@ export default {
         'spin': 'spin 1.5s linear infinite',
         'gradient-wave-vertical': 'gradient-wave-vertical 8s linear infinite',
         'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        blink: 'blink 0.7s infinite',
       },
     },
   },

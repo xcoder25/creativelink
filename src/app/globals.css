@@ -66,3 +66,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .typewriter-cursor {
+    animation: blink 0.7s infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -7,11 +7,13 @@ import { featuredProjects, testimonials } from '@/lib/data';
 import ProjectCard from '@/components/project-card';
 import TestimonialCarousel from '@/components/testimonial-carousel';
 import imageData from '@/lib/placeholder-images.json';
+import Typewriter from '@/components/typewriter';
 
 const { placeholderImages } = imageData;
 
 export default function Home() {
   const aboutImage = placeholderImages.find(p => p.id === 'designer-portrait');
+  const typewriterText = "As a creative graphic designer, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.";
 
   return (
     <div className="flex flex-col">
@@ -22,9 +24,9 @@ export default function Home() {
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.2s' }}>Connect.</span>
             <span className="inline-block animate-fade-in-up" style={{ animationDelay: '0.3s' }}>Inspire.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            As a creative graphic designer, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.
-          </p>
+          <div className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl" style={{ animationDelay: '0.4s' }}>
+             <Typewriter text={typewriterText} />
+          </div>
           <div className="mt-8 flex justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <Button asChild size="lg">
               <Link href="/projects">
