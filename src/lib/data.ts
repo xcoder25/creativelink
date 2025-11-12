@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     slug: 'zenith-financials',
     title: 'Zenith Financials',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('project-cover-zenith'),
     summary: "A complete brand overhaul for Zenith Financials, projecting an image of trust and modernity. The new identity, featuring a bold 'Z' monogram and a cool-toned palette, increased brand recognition by 40% and contributed to a 15% rise in client acquisition.",
     description: "Zenith Financials approached us for a complete brand overhaul. Their existing identity felt dated and didn't reflect their position as a forward-thinking financial advisory firm. Our goal was to create a modern, trustworthy, and sophisticated brand that would resonate with high-net-worth individuals and corporate clients.",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     slug: 'nomad-travel-app',
     title: 'Nomad Travel App',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('project-cover-nomad'),
     summary: "Designed a user-centric travel planning app, Nomad, focusing on intuitive navigation and a visually stunning interface. The design boosted user engagement by 60% and secured a 'Best New App' feature on the App Store, thanks to its seamless booking process and personalized recommendations.",
     description: "Nomad is a travel planning application designed for the modern adventurer. The challenge was to create an interface that was both feature-rich and incredibly easy to use. We focused on a user-centric design process, from wireframing and prototyping to final UI design, ensuring every interaction was intuitive and enjoyable.",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
   {
     slug: 'eco-foods-packaging',
     title: 'Eco Foods Packaging',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('project-cover-eco-foods'),
     summary: "Developed a new packaging design for Eco Foods, a line of organic snacks. The design uses earthy tones and hand-drawn illustrations to communicate natural ingredients and sustainability, resulting in a 25% sales increase and securing placement in major retail chains.",
     description: "Eco Foods needed a packaging refresh that would help them stand out in the crowded organic food market. The key was to visually communicate their commitment to natural, sustainable ingredients in a way that felt authentic and appealing. We created a design system that was flexible enough to work across their entire product line.",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
   {
     slug: 'corporate-identity-suite',
     title: 'Corporate Identity Suite',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p1'),
     summary: "Crafted a cohesive corporate identity suite for a new tech startup, including logos, business cards, and brand guidelines, to establish a strong market presence.",
     description: "A comprehensive branding package to launch a new brand.",
@@ -113,22 +113,22 @@ export const projects: Project[] = [
     aiPrompt: { projectName: 'Innovatech Branding', designChoices: 'Minimalist and modern.', outcomes: 'Successful brand launch.' }
   },
   {
-    slug: 'branding-concept-2',
-    title: 'Branding Concept',
-    category: 'Branding',
+    slug: 'logo-concept-2',
+    title: 'Logo Concept',
+    category: 'Logos',
     coverImage: getImage('p2'),
-    summary: 'A modern branding concept.',
-    description: 'A modern branding concept.',
-    projectInfo: { client: 'Client', year: 2024, services: 'Branding' },
+    summary: 'A modern logo concept.',
+    description: 'A modern logo concept.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Logo Design' },
     images: [],
-    aiPrompt: { projectName: 'Branding Concept', designChoices: 'Modern', outcomes: 'Concept' }
+    aiPrompt: { projectName: 'Logo Concept', designChoices: 'Modern', outcomes: 'Concept' }
   },
   {
     slug: 'e-commerce-branding',
     title: 'E-commerce Branding',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p3'),
-    summary: "Complete branding for an e-commerce platform's UI/UX to improve user flow and increase conversions.",
+    summary: "Complete branding for an e-commerce platform to improve user flow and increase conversions.",
     description: "A user-focused branding to enhance the shopping experience.",
     projectInfo: { client: 'Shopify Plus', year: 2024, services: 'UI/UX, Branding' },
     images: [],
@@ -148,7 +148,7 @@ export const projects: Project[] = [
   {
     slug: 'event-promotion-pack',
     title: 'Event Promotion Pack',
-    category: 'Print Design',
+    category: 'Flyers',
     coverImage: getImage('p5'),
     summary: "Design of promotional materials for a major music festival, including flyers, posters, and social media assets.",
     description: "Creating a vibrant and energetic visual identity for a music festival.",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
   {
     slug: 'automotive-branding',
     title: 'Automotive Branding',
-    category: 'Print Design',
+    category: 'Banners',
     coverImage: getImage('p6'),
     summary: "Eye-catching vehicle wraps and car branding for a local business to increase brand visibility on the go.",
     description: "Mobile advertising through creative car branding.",
@@ -170,7 +170,7 @@ export const projects: Project[] = [
   {
     slug: 'billboard-ad',
     title: 'Billboard Ad',
-    category: 'Print Design',
+    category: 'Banners',
     coverImage: getImage('p7'),
     summary: 'A billboard design for a major ad campaign.',
     description: 'A billboard design for a major ad campaign.',
@@ -181,7 +181,7 @@ export const projects: Project[] = [
    {
     slug: 'packaging-design',
     title: 'Packaging Design',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p8'),
     summary: 'A packaging design.',
     description: 'A packaging design.',
@@ -192,7 +192,7 @@ export const projects: Project[] = [
   {
     slug: 'mobile-app-ui',
     title: 'Mobile App UI',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p9'),
     summary: 'A mobile app UI design.',
     description: 'A mobile app UI design.',
@@ -203,7 +203,7 @@ export const projects: Project[] = [
   {
     slug: 'corporate-identity-10',
     title: 'Corporate Identity',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p10'),
     summary: 'A corporate identity project.',
     description: 'A corporate identity project.',
@@ -225,7 +225,7 @@ export const projects: Project[] = [
   {
     slug: 'website-banner',
     title: 'Website Banner',
-    category: 'Branding',
+    category: 'Banners',
     coverImage: getImage('p12'),
     summary: 'A website banner design.',
     description: 'A website banner design.',
@@ -236,7 +236,7 @@ export const projects: Project[] = [
   {
     slug: 'business-card-13',
     title: 'Business Card',
-    category: 'Print Design',
+    category: 'Business Cards',
     coverImage: getImage('p13'),
     summary: 'A business card design.',
     description: 'A business card design.',
@@ -247,7 +247,7 @@ export const projects: Project[] = [
   {
     slug: 'poster-design-14',
     title: 'Poster Design',
-    category: 'Print Design',
+    category: 'Flyers',
     coverImage: getImage('p14'),
     summary: 'A poster design project.',
     description: 'A poster design project.',
@@ -269,7 +269,7 @@ export const projects: Project[] = [
   {
     slug: 'corporate-brochure',
     title: 'Corporate Brochure',
-    category: 'Print Design',
+    category: 'Flyers',
     coverImage: getImage('p16'),
     summary: "Designed a professional and informative brochure for a corporate client to use for marketing and sales.",
     description: "A high-quality print piece to showcase company services.",
@@ -280,7 +280,7 @@ export const projects: Project[] = [
   {
     slug: 'social-media-graphic',
     title: 'Social Media Graphic',
-    category: 'Branding',
+    category: 'Banners',
     coverImage: getImage('p17'),
     summary: 'A social media graphic design.',
     description: 'A social media graphic design.',
@@ -291,7 +291,7 @@ export const projects: Project[] = [
   {
     slug: 'landing-page',
     title: 'Landing Page',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p18'),
     summary: 'A landing page design.',
     description: 'A landing page design.',
@@ -313,7 +313,7 @@ export const projects: Project[] = [
   {
     slug: 'brand-manual',
     title: 'Brand Manual',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p20'),
     summary: 'A brand manual design.',
     description: 'A brand manual design.',
@@ -324,7 +324,7 @@ export const projects: Project[] = [
   {
     slug: 'app-ui-branding',
     title: 'App UI Branding',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p21'),
     summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
     description: "A complete design system for a consistent and scalable app.",
@@ -335,7 +335,7 @@ export const projects: Project[] = [
   {
     slug: 'vehicle-graphics-22',
     title: 'Vehicle Graphics',
-    category: 'Print Design',
+    category: 'Banners',
     coverImage: getImage('p22'),
     summary: 'A vehicle graphics design.',
     description: 'A vehicle graphics design.',
@@ -346,7 +346,7 @@ export const projects: Project[] = [
   {
     slug: 'product-label-23',
     title: 'Product Label',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p23'),
     summary: 'A product label design.',
     description: 'A product label design.',
@@ -379,7 +379,7 @@ export const projects: Project[] = [
   {
     slug: 'storefront-sign-26',
     title: 'Storefront Sign',
-    category: 'Print Design',
+    category: 'Banners',
     coverImage: getImage('p26'),
     summary: 'A storefront sign design.',
     description: 'A storefront sign design.',
@@ -390,7 +390,7 @@ export const projects: Project[] = [
   {
     slug: 'email-newsletter-27',
     title: 'Email Newsletter',
-    category: 'Branding',
+    category: 'Flyers',
     coverImage: getImage('p27'),
     summary: 'An email newsletter design.',
     description: 'An email newsletter design.',
@@ -401,7 +401,7 @@ export const projects: Project[] = [
   {
     slug: 'dashboard-ui-28',
     title: 'Dashboard UI',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p28'),
     summary: 'A dashboard UI design.',
     description: 'A dashboard UI design.',
@@ -412,7 +412,7 @@ export const projects: Project[] = [
   {
     slug: 'book-cover-29',
     title: 'Book Cover',
-    category: 'Print Design',
+    category: 'Flyers',
     coverImage: getImage('p29'),
     summary: 'A book cover design.',
     description: 'A book cover design.',
@@ -434,7 +434,7 @@ export const projects: Project[] = [
   {
     slug: 'restaurant-branding-package',
     title: 'Restaurant Branding Package',
-    category: 'Branding',
+    category: 'Corporate Branding',
     coverImage: getImage('p31'),
     summary: "Complete branding for a new restaurant, including menu design, packaging, and signage.",
     description: "Creating a delicious brand identity from scratch.",
@@ -445,7 +445,7 @@ export const projects: Project[] = [
   {
     slug: 'app-icon-32',
     title: 'App Icon',
-    category: 'Branding',
+    category: 'Logos',
     coverImage: getImage('p32'),
     summary: 'An app icon design.',
     description: 'An app icon design.',
