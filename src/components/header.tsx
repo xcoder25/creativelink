@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { useState } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -44,17 +44,28 @@ export default function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Logo />
 
-        <nav className="hidden items-center space-x-6 md:flex">
-          {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
-          ))}
-        </nav>
+        <div className="flex items-center gap-4">
+          <nav className="hidden items-center space-x-6 md:flex">
+            {navLinks.map((link) => (
+              <NavLink key={link.href} {...link} />
+            ))}
+          </nav>
+          
+          <div className="hidden md:block">
+            <Button asChild variant="outline" size="sm">
+              <Link href="/cv.pdf" target="_blank" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </Link>
+            </Button>
+          </div>
 
-        <div className="md:hidden">
-          <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? <X /> : <Menu />}
-            <span className="sr-only">Toggle menu</span>
-          </Button>
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <X /> : <Menu />}
+              <span className="sr-only">Toggle menu</span>
+            </Button>
+          </div>
         </div>
       </div>
       
@@ -65,10 +76,18 @@ export default function Header() {
           isMobileMenuOpen ? 'max-h-96 border-t' : 'max-h-0 border-t-0'
         )}
       >
-        <nav className="flex flex-col px-4">
+        <nav className="flex flex-col px-4 py-2">
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
+          <div className="mt-2 border-t pt-2">
+             <Button asChild variant="ghost" className="w-full justify-start">
+                <Link href="/cv.pdf" target="_blank" download>
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Link>
+              </Button>
+          </div>
         </nav>
       </div>
     </header>
