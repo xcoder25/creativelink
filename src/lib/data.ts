@@ -1,3 +1,4 @@
+
 import type { Project, Skill, Testimonial } from './types';
 import imageData from './placeholder-images.json';
 
