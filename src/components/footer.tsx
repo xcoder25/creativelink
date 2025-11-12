@@ -31,14 +31,15 @@ export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-secondary/50">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-start md:text-left md:gap-16">
+          <div className="flex flex-col items-center md:items-start gap-4">
             <Logo />
             <p className="max-w-xs text-sm text-muted-foreground">
               A creative design portfolio focused on innovation, connection, and inspiration.
             </p>
           </div>
-          <div className="md:mx-auto">
+          
+          <div className="flex flex-col items-center md:items-start md:mx-auto">
             <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
@@ -50,7 +51,8 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="md:ml-auto">
+
+          <div className="flex flex-col items-center md:items-start md:ml-auto">
             <h3 className="font-headline text-lg font-semibold">Connect</h3>
             <p className="mt-4 text-sm text-muted-foreground">hello@creativelink.com</p>
             <div className="mt-4 flex items-center gap-2">
