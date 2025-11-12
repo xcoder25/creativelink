@@ -48,5 +48,5 @@ export type Testimonial = {
 
 export type Skill = {
   name: string;
-  proficiency: number;
+  proficiency?: number;
 };

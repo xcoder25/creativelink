@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import SkillsChart from '@/components/skills-chart';
 import { skills } from '@/lib/data';
 import imageData from '@/lib/placeholder-images.json';
+import { Badge } from '@/components/ui/badge';
 
 const { placeholderImages } = imageData;
 
@@ -51,10 +51,16 @@ export default function AboutPage() {
       
       <section className="mt-20">
         <h2 className="font-headline text-4xl font-bold text-center mb-12 animate-fade-in-up">
-          My Skills
+          My Skills & Services
         </h2>
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <SkillsChart skills={skills} />
+        <div className="max-w-4xl mx-auto animate-fade-in text-center">
+            <div className="flex flex-wrap justify-center gap-4">
+                {skills.map((skill) => (
+                    <Badge key={skill.name} variant="outline" className="text-lg px-6 py-2 rounded-full">
+                        {skill.name}
+                    </Badge>
+                ))}
+            </div>
         </div>
       </section>
     </div>

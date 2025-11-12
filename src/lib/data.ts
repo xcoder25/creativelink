@@ -129,10 +129,14 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: 'Figma', proficiency: 95 },
-  { name: 'Adobe Illustrator', proficiency: 90 },
-  { name: 'Adobe Photoshop', proficiency: 85 },
-  { name: 'Webflow', proficiency: 80 },
-  { name: 'Branding', proficiency: 95 },
-  { name: 'UI/UX Design', proficiency: 90 },
+  { name: 'Logo Design' },
+  { name: 'Flyers' },
+  { name: 'Car Branding' },
+  { name: 'Printing' },
+  { name: 'Billboards' },
+  { name: 'Branding' },
+  { name: 'UI/UX Design' },
+  { name: 'Figma' },
+  { name: 'Adobe Illustrator' },
+  { name: 'Adobe Photoshop' },
 ];
