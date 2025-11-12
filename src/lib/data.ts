@@ -82,7 +82,7 @@ export const projects: Project[] = [
       outcomes: 'The artwork was instrumental in the game\'s marketing campaign, helping to drive a 200% increase in pre-orders compared to the studio\'s previous title. The style was widely praised by gaming journalists for its originality and visual impact.'
     }
   },
-    {
+  {
     slug: 'eco-foods-packaging',
     title: 'Eco Foods Packaging',
     category: 'Branding',
@@ -109,8 +109,19 @@ export const projects: Project[] = [
     summary: "Crafted a cohesive corporate identity suite for a new tech startup, including logos, business cards, and brand guidelines, to establish a strong market presence.",
     description: "A comprehensive branding package to launch a new brand.",
     projectInfo: { client: 'Innovatech', year: 2024, services: 'Logo, Business Cards, Brand Guidelines' },
-    images: [getImage('p2'), getImage('p10'), getImage('p13'), getImage('p20')],
+    images: [],
     aiPrompt: { projectName: 'Innovatech Branding', designChoices: 'Minimalist and modern.', outcomes: 'Successful brand launch.' }
+  },
+  {
+    slug: 'branding-concept-2',
+    title: 'Branding Concept',
+    category: 'Branding',
+    coverImage: getImage('p2'),
+    summary: 'A modern branding concept.',
+    description: 'A modern branding concept.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Branding' },
+    images: [],
+    aiPrompt: { projectName: 'Branding Concept', designChoices: 'Modern', outcomes: 'Concept' }
   },
   {
     slug: 'e-commerce-branding',
@@ -120,7 +131,7 @@ export const projects: Project[] = [
     summary: "Complete branding for an e-commerce platform's UI/UX to improve user flow and increase conversions.",
     description: "A user-focused branding to enhance the shopping experience.",
     projectInfo: { client: 'Shopify Plus', year: 2024, services: 'UI/UX, Branding' },
-    images: [getImage('p9'), getImage('p18'), getImage('p28')],
+    images: [],
     aiPrompt: { projectName: 'Shopify Plus Branding', designChoices: 'Clean, intuitive, and mobile-first.', outcomes: 'Increased user engagement and sales.' }
   },
   {
@@ -131,7 +142,7 @@ export const projects: Project[] = [
     summary: "A series of detailed illustrations for a fantasy novel, bringing the author's world to life.",
     description: "Creating magical worlds through digital art.",
     projectInfo: { client: 'Penguin Books', year: 2023, services: 'Illustration, Book Cover' },
-    images: [getImage('p11'), getImage('p19'), getImage('p25'), getImage('p29')],
+    images: [],
     aiPrompt: { projectName: 'Novel Illustrations', designChoices: 'Rich textures and atmospheric lighting.', outcomes: 'Visually stunning book series.' }
   },
   {
@@ -142,7 +153,7 @@ export const projects: Project[] = [
     summary: "Design of promotional materials for a major music festival, including flyers, posters, and social media assets.",
     description: "Creating a vibrant and energetic visual identity for a music festival.",
     projectInfo: { client: 'Music Fest', year: 2024, services: 'Flyers, Posters, Social Media Graphics' },
-    images: [getImage('p7'), getImage('p14'), getImage('p17')],
+    images: [],
     aiPrompt: { projectName: 'Music Fest Promo', designChoices: 'Bold typography and dynamic imagery.', outcomes: 'Sold-out event.' }
   },
   {
@@ -153,30 +164,96 @@ export const projects: Project[] = [
     summary: "Eye-catching vehicle wraps and car branding for a local business to increase brand visibility on the go.",
     description: "Mobile advertising through creative car branding.",
     projectInfo: { client: 'Local Motors', year: 2023, services: 'Car Branding, Vehicle Graphics' },
-    images: [getImage('p22')],
+    images: [],
     aiPrompt: { projectName: 'Local Motors Branding', designChoices: 'Sleek lines and a memorable logo.', outcomes: 'Increased local brand recognition.' }
   },
   {
-    slug: 'restaurant-branding-package',
-    title: 'Restaurant Branding Package',
+    slug: 'billboard-ad',
+    title: 'Billboard Ad',
+    category: 'Print Design',
+    coverImage: getImage('p7'),
+    summary: 'A billboard design for a major ad campaign.',
+    description: 'A billboard design for a major ad campaign.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Billboard Ad', designChoices: 'Bold and clear.', outcomes: 'High visibility.' }
+  },
+   {
+    slug: 'packaging-design',
+    title: 'Packaging Design',
     category: 'Branding',
-    coverImage: getImage('p31'),
-    summary: "Complete branding for a new restaurant, including menu design, packaging, and signage.",
-    description: "Creating a delicious brand identity from scratch.",
-    projectInfo: { client: 'The Corner Bistro', year: 2024, services: 'Menu Design, Packaging, Signage' },
-    images: [getImage('p8'), getImage('p23'), getImage('p26')],
-    aiPrompt: { projectName: 'Bistro Branding', designChoices: 'Warm, rustic, and inviting.', outcomes: 'Successful restaurant launch.' }
+    coverImage: getImage('p8'),
+    summary: 'A packaging design.',
+    description: 'A packaging design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Packaging' },
+    images: [],
+    aiPrompt: { projectName: 'Packaging Design', designChoices: 'Creative', outcomes: 'Great results' }
   },
   {
-    slug: 'app-ui-branding',
-    title: 'App UI Branding',
+    slug: 'mobile-app-ui',
+    title: 'Mobile App UI',
     category: 'Branding',
-    coverImage: getImage('p21'),
-    summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
-    description: "A complete design system for a consistent and scalable app.",
-    projectInfo: { client: 'ConnectApp', year: 2023, services: 'UI Design, Iconography' },
-    images: [getImage('p32'), getImage('p27')],
-    aiPrompt: { projectName: 'ConnectApp UI Kit', designChoices: 'Modern, clean, and highly usable.', outcomes: 'Streamlined development process.' }
+    coverImage: getImage('p9'),
+    summary: 'A mobile app UI design.',
+    description: 'A mobile app UI design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'UI/UX' },
+    images: [],
+    aiPrompt: { projectName: 'Mobile App UI', designChoices: 'Modern', outcomes: 'Great results' }
+  },
+  {
+    slug: 'corporate-identity-10',
+    title: 'Corporate Identity',
+    category: 'Branding',
+    coverImage: getImage('p10'),
+    summary: 'A corporate identity project.',
+    description: 'A corporate identity project.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Branding' },
+    images: [],
+    aiPrompt: { projectName: 'Corporate Identity', designChoices: 'Professional', outcomes: 'Great results' }
+  },
+  {
+    slug: 'character-design',
+    title: 'Character Design',
+    category: 'Illustration',
+    coverImage: getImage('p11'),
+    summary: 'A character design project.',
+    description: 'A character design project.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Character Design', designChoices: 'Creative', outcomes: 'Great results' }
+  },
+  {
+    slug: 'website-banner',
+    title: 'Website Banner',
+    category: 'Branding',
+    coverImage: getImage('p12'),
+    summary: 'A website banner design.',
+    description: 'A website banner design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Web Design' },
+    images: [],
+    aiPrompt: { projectName: 'Website Banner', designChoices: 'Eye-catching', outcomes: 'Great results' }
+  },
+  {
+    slug: 'business-card-13',
+    title: 'Business Card',
+    category: 'Print Design',
+    coverImage: getImage('p13'),
+    summary: 'A business card design.',
+    description: 'A business card design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Business Card', designChoices: 'Elegant', outcomes: 'Great results' }
+  },
+  {
+    slug: 'poster-design-14',
+    title: 'Poster Design',
+    category: 'Print Design',
+    coverImage: getImage('p14'),
+    summary: 'A poster design project.',
+    description: 'A poster design project.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Poster Design', designChoices: 'Bold', outcomes: 'Great results' }
   },
   {
     slug: 'apparel-graphics',
@@ -186,7 +263,7 @@ export const projects: Project[] = [
     summary: "Created a collection of graphic designs for a streetwear apparel brand.",
     description: "Unique and trendy designs for t-shirts and other apparel.",
     projectInfo: { client: 'Urban Wear', year: 2024, services: 'T-shirt Design, Illustration' },
-    images: [getImage('p30'), getImage('p33')],
+    images: [],
     aiPrompt: { projectName: 'Urban Wear Graphics', designChoices: 'Edgy, graphic, and inspired by street culture.', outcomes: 'Popular new clothing line.' }
   },
   {
@@ -197,8 +274,195 @@ export const projects: Project[] = [
     summary: "Designed a professional and informative brochure for a corporate client to use for marketing and sales.",
     description: "A high-quality print piece to showcase company services.",
     projectInfo: { client: 'Global Corp', year: 2023, services: 'Brochure Design, Print Layout' },
-    images: [getImage('p12'), getImage('p24')],
+    images: [],
     aiPrompt: { projectName: 'Global Corp Brochure', designChoices: 'Clean layout, professional typography, and impactful imagery.', outcomes: 'Effective sales tool.' }
+  },
+  {
+    slug: 'social-media-graphic',
+    title: 'Social Media Graphic',
+    category: 'Branding',
+    coverImage: getImage('p17'),
+    summary: 'A social media graphic design.',
+    description: 'A social media graphic design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Social Media' },
+    images: [],
+    aiPrompt: { projectName: 'Social Media Graphic', designChoices: 'Engaging', outcomes: 'Great results' }
+  },
+  {
+    slug: 'landing-page',
+    title: 'Landing Page',
+    category: 'Branding',
+    coverImage: getImage('p18'),
+    summary: 'A landing page design.',
+    description: 'A landing page design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Web Design' },
+    images: [],
+    aiPrompt: { projectName: 'Landing Page', designChoices: 'Modern', outcomes: 'Great results' }
+  },
+  {
+    slug: 'abstract-illustration',
+    title: 'Abstract Illustration',
+    category: 'Illustration',
+    coverImage: getImage('p19'),
+    summary: 'An abstract illustration.',
+    description: 'An abstract illustration.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Abstract Illustration', designChoices: 'Creative', outcomes: 'Great results' }
+  },
+  {
+    slug: 'brand-manual',
+    title: 'Brand Manual',
+    category: 'Branding',
+    coverImage: getImage('p20'),
+    summary: 'A brand manual design.',
+    description: 'A brand manual design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Branding' },
+    images: [],
+    aiPrompt: { projectName: 'Brand Manual', designChoices: 'Comprehensive', outcomes: 'Great results' }
+  },
+  {
+    slug: 'app-ui-branding',
+    title: 'App UI Branding',
+    category: 'Branding',
+    coverImage: getImage('p21'),
+    summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
+    description: "A complete design system for a consistent and scalable app.",
+    projectInfo: { client: 'ConnectApp', year: 2023, services: 'UI Design, Iconography' },
+    images: [],
+    aiPrompt: { projectName: 'ConnectApp UI Kit', designChoices: 'Modern, clean, and highly usable.', outcomes: 'Streamlined development process.' }
+  },
+  {
+    slug: 'vehicle-graphics-22',
+    title: 'Vehicle Graphics',
+    category: 'Print Design',
+    coverImage: getImage('p22'),
+    summary: 'A vehicle graphics design.',
+    description: 'A vehicle graphics design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Vehicle Graphics', designChoices: 'Bold', outcomes: 'Great results' }
+  },
+  {
+    slug: 'product-label-23',
+    title: 'Product Label',
+    category: 'Branding',
+    coverImage: getImage('p23'),
+    summary: 'A product label design.',
+    description: 'A product label design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Packaging' },
+    images: [],
+    aiPrompt: { projectName: 'Product Label', designChoices: 'Creative', outcomes: 'Great results' }
+  },
+  {
+    slug: 'infographic-design-24',
+    title: 'Infographic Design',
+    category: 'Illustration',
+    coverImage: getImage('p24'),
+    summary: 'An infographic design.',
+    description: 'An infographic design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Infographic', designChoices: 'Informative', outcomes: 'Great results' }
+  },
+  {
+    slug: 'digital-painting-25',
+    title: 'Digital Painting',
+    category: 'Illustration',
+    coverImage: getImage('p25'),
+    summary: 'A digital painting.',
+    description: 'A digital painting.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Digital Painting', designChoices: 'Artistic', outcomes: 'Great results' }
+  },
+  {
+    slug: 'storefront-sign-26',
+    title: 'Storefront Sign',
+    category: 'Print Design',
+    coverImage: getImage('p26'),
+    summary: 'A storefront sign design.',
+    description: 'A storefront sign design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Storefront Sign', designChoices: 'Visible', outcomes: 'Great results' }
+  },
+  {
+    slug: 'email-newsletter-27',
+    title: 'Email Newsletter',
+    category: 'Branding',
+    coverImage: getImage('p27'),
+    summary: 'An email newsletter design.',
+    description: 'An email newsletter design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Marketing' },
+    images: [],
+    aiPrompt: { projectName: 'Email Newsletter', designChoices: 'Engaging', outcomes: 'Great results' }
+  },
+  {
+    slug: 'dashboard-ui-28',
+    title: 'Dashboard UI',
+    category: 'Branding',
+    coverImage: getImage('p28'),
+    summary: 'A dashboard UI design.',
+    description: 'A dashboard UI design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'UI/UX' },
+    images: [],
+    aiPrompt: { projectName: 'Dashboard UI', designChoices: 'Functional', outcomes: 'Great results' }
+  },
+  {
+    slug: 'book-cover-29',
+    title: 'Book Cover',
+    category: 'Print Design',
+    coverImage: getImage('p29'),
+    summary: 'A book cover design.',
+    description: 'A book cover design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Print Design' },
+    images: [],
+    aiPrompt: { projectName: 'Book Cover', designChoices: 'Creative', outcomes: 'Great results' }
+  },
+  {
+    slug: 'pattern-design-30',
+    title: 'Pattern Design',
+    category: 'Illustration',
+    coverImage: getImage('p30'),
+    summary: 'A pattern design.',
+    description: 'A pattern design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Pattern Design', designChoices: 'Seamless', outcomes: 'Great results' }
+  },
+  {
+    slug: 'restaurant-branding-package',
+    title: 'Restaurant Branding Package',
+    category: 'Branding',
+    coverImage: getImage('p31'),
+    summary: "Complete branding for a new restaurant, including menu design, packaging, and signage.",
+    description: "Creating a delicious brand identity from scratch.",
+    projectInfo: { client: 'The Corner Bistro', year: 2024, services: 'Menu Design, Packaging, Signage' },
+    images: [],
+    aiPrompt: { projectName: 'Bistro Branding', designChoices: 'Warm, rustic, and inviting.', outcomes: 'Successful restaurant launch.' }
+  },
+  {
+    slug: 'app-icon-32',
+    title: 'App Icon',
+    category: 'Branding',
+    coverImage: getImage('p32'),
+    summary: 'An app icon design.',
+    description: 'An app icon design.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Branding' },
+    images: [],
+    aiPrompt: { projectName: 'App Icon', designChoices: 'Memorable', outcomes: 'Great results' }
+  },
+  {
+    slug: 'vector-art-33',
+    title: 'Vector Art',
+    category: 'Illustration',
+    coverImage: getImage('p33'),
+    summary: 'A vector art piece.',
+    description: 'A vector art piece.',
+    projectInfo: { client: 'Client', year: 2024, services: 'Illustration' },
+    images: [],
+    aiPrompt: { projectName: 'Vector Art', designChoices: 'Scalable', outcomes: 'Great results' }
   }
 ];
 
