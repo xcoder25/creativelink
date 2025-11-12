@@ -1,3 +1,6 @@
+
+'use client';
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { projects } from '@/lib/data';
@@ -13,30 +16,25 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Quote } from 'lucide-react';
-
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    slug: slugify(project.title),
-  }));
-}
-
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug);
-
-  if (!project) {
-    return {
-      title: 'Project Not Found | Creativelink',
-    };
-  }
-
-  return {
-    title: `${project.title} | Creativelink`,
-    description: project.summary,
-  };
-}
+import { generateProjectSummary } from '@/ai/flows/ai-project-summarization';
+import { useEffect, useState } from 'react';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function ProjectDetailsPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
+  const [aiSummary, setAiSummary] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (project) {
+      generateProjectSummary(project.aiPrompt)
+        .then((output) => {
+          setAiSummary(output.summary);
+        })
+        .catch(console.error)
+        .finally(() => setLoading(false));
+    }
+  }, [project]);
 
   if (!project) {
     notFound();
@@ -90,8 +88,16 @@ export default function ProjectDetailsPage({ params }: { params: { slug: string 
           <div className="md:col-span-2">
             <section>
               <h3 className="font-headline text-2xl font-bold">AI-Generated Summary</h3>
-               <div className="mt-4 rounded-lg border bg-secondary p-4">
-                  <p className="text-secondary-foreground">{project.summary}</p>
+               <div className="mt-4 rounded-lg border bg-secondary p-4 min-h-[100px]">
+                  {loading ? (
+                    <div className="space-y-2">
+                      <Skeleton className="h-4 w-full" />
+                      <Skeleton className="h-4 w-full" />
+                      <Skeleton className="h-4 w-3/4" />
+                    </div>
+                  ) : (
+                    <p className="text-secondary-foreground">{aiSummary}</p>
+                  )}
               </div>
             </section>
           </div>
