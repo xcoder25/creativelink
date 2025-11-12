@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
@@ -33,7 +34,9 @@ export default function RootLayout({
         <LoadingProvider>
           <PageLoader>
             <Header />
-            <main className="flex-grow">{children}</main>
+            <main className="flex-grow">
+              <Suspense>{children}</Suspense>
+            </main>
             <Footer />
           </PageLoader>
         </LoadingProvider>
