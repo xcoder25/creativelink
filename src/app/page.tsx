@@ -13,6 +13,22 @@ import LoadingLink from '@/components/loading-link';
 
 const { placeholderImages } = imageData;
 
+const WavyText = ({ text, delayStep = 0.05 }: { text: string; delayStep?: number }) => {
+  return (
+    <>
+      {text.split('').map((char, index) => (
+        <span
+          key={`${char}-${index}`}
+          className="inline-block animate-fluid-gradient"
+          style={{ animationDelay: `${index * delayStep}s` }}
+        >
+          {char}
+        </span>
+      ))}
+    </>
+  );
+};
+
 export default function Home() {
   const aboutImage = placeholderImages.find(p => p.id === 'designer-portrait');
   const typewriterText = "As a creative graphic designer, I'm passionate about creating stunning visuals and compelling brand identities. Explore my work and let's create something beautiful together.";
@@ -22,9 +38,9 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 text-center">
         <div className="animate-fade-in-up">
           <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-            <span className="inline-block animate-fluid-gradient" style={{ animationDelay: '0.1s' }}>Innovate.</span>
-            <span className="inline-block animate-fluid-gradient" style={{ animationDelay: '0.2s' }}>Connect.</span>
-            <span className="inline-block animate-fluid-gradient" style={{ animationDelay: '0.3s' }}>Inspire.</span>
+            <span className="inline-block whitespace-nowrap"><WavyText text="Innovate." /></span>
+            <span className="inline-block whitespace-nowrap"><WavyText text="Connect." delayStep={0.03} /></span>
+            <span className="inline-block whitespace-nowrap"><WavyText text="Inspire." /></span>
           </h1>
           <div className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl" style={{ animationDelay: '0.4s' }}>
              <Typewriter text={typewriterText} />
