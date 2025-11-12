@@ -13,11 +13,6 @@ const getImage = (id: string) => {
   return { src: image.imageUrl, hint: image.imageHint };
 }
 
-// In a real application, you would generate these summaries using the AI flow.
-// For this example, we'll hardcode them.
-// import { generateProjectSummary } from '@/ai/flows/ai-project-summarization';
-// const zenithSummary = await generateProjectSummary(zenithAIInput);
-
 export const projects: Project[] = [
   {
     slug: 'zenith-financials',
@@ -66,7 +61,7 @@ export const projects: Project[] = [
   {
     slug: 'cyberglow-chronicles',
     title: 'CyberGlow Chronicles',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('project-cover-cyberglow'),
     summary: "A series of futuristic character illustrations for the 'CyberGlow Chronicles' gaming franchise. The neon-drenched, cyberpunk aesthetic was praised for its originality, driving a significant pre-order campaign and establishing a distinct visual world for the game.",
     description: "We were commissioned to create a series of key character illustrations for the upcoming sci-fi game, 'CyberGlow Chronicles'. The goal was to establish a unique and memorable visual style that would define the game's world and characters, blending cyberpunk aesthetics with a touch of ethereal fantasy.",
@@ -114,7 +109,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'logo-concept-2',
-    title: 'Logo Concept',
+    title: 'Abstract Logo Concept',
     category: 'Logos',
     coverImage: getImage('p2'),
     summary: 'A modern logo concept.',
@@ -137,7 +132,7 @@ export const projects: Project[] = [
   {
     slug: 'fantasy-art-series',
     title: 'Fantasy Art Series',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p4'),
     summary: "A series of detailed illustrations for a fantasy novel, bringing the author's world to life.",
     description: "Creating magical worlds through digital art.",
@@ -214,7 +209,7 @@ export const projects: Project[] = [
   {
     slug: 'character-design',
     title: 'Character Design',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p11'),
     summary: 'A character design project.',
     description: 'A character design project.',
@@ -235,7 +230,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'business-card-13',
-    title: 'Business Card',
+    title: 'Modern Business Card',
     category: 'Business Cards',
     coverImage: getImage('p13'),
     summary: 'A business card design.',
@@ -246,7 +241,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'poster-design-14',
-    title: 'Poster Design',
+    title: 'Event Poster Design',
     category: 'Flyers',
     coverImage: getImage('p14'),
     summary: 'A poster design project.',
@@ -258,7 +253,7 @@ export const projects: Project[] = [
   {
     slug: 'apparel-graphics',
     title: 'Apparel Graphics',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p15'),
     summary: "Created a collection of graphic designs for a streetwear apparel brand.",
     description: "Unique and trendy designs for t-shirts and other apparel.",
@@ -302,7 +297,7 @@ export const projects: Project[] = [
   {
     slug: 'abstract-illustration',
     title: 'Abstract Illustration',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p19'),
     summary: 'An abstract illustration.',
     description: 'An abstract illustration.',
@@ -357,7 +352,7 @@ export const projects: Project[] = [
   {
     slug: 'infographic-design-24',
     title: 'Infographic Design',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p24'),
     summary: 'An infographic design.',
     description: 'An infographic design.',
@@ -368,7 +363,7 @@ export const projects: Project[] = [
   {
     slug: 'digital-painting-25',
     title: 'Digital Painting',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p25'),
     summary: 'A digital painting.',
     description: 'A digital painting.',
@@ -423,7 +418,7 @@ export const projects: Project[] = [
   {
     slug: 'pattern-design-30',
     title: 'Pattern Design',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p30'),
     summary: 'A pattern design.',
     description: 'A pattern design.',
@@ -444,7 +439,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'app-icon-32',
-    title: 'App Icon',
+    title: 'Mobile App Icon',
     category: 'Logos',
     coverImage: getImage('p32'),
     summary: 'An app icon design.',
@@ -456,7 +451,7 @@ export const projects: Project[] = [
   {
     slug: 'vector-art-33',
     title: 'Vector Art',
-    category: 'Illustration',
+    category: 'Flyers',
     coverImage: getImage('p33'),
     summary: 'A vector art piece.',
     description: 'A vector art piece.',
