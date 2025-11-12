@@ -100,6 +100,105 @@ export const projects: Project[] = [
       outcomes: "Within three months of the new packaging launch, Eco Foods saw a 25% increase in sales. The brand also secured new distribution deals with two major national retailers, who cited the new packaging's shelf appeal as a key factor.",
     }
   },
+  {
+    slug: 'corporate-identity-suite',
+    title: 'Corporate Identity Suite',
+    category: 'Branding',
+    coverImage: getImage('p1'),
+    summary: "Crafted a cohesive corporate identity suite for a new tech startup, including logos, business cards, and brand guidelines, to establish a strong market presence.",
+    description: "A comprehensive branding package to launch a new brand.",
+    projectInfo: { client: 'Innovatech', year: 2024, services: 'Logo, Business Cards, Brand Guidelines' },
+    images: [getImage('p2'), getImage('p10'), getImage('p13'), getImage('p20')],
+    aiPrompt: { projectName: 'Innovatech Branding', designChoices: 'Minimalist and modern.', outcomes: 'Successful brand launch.' }
+  },
+  {
+    slug: 'e-commerce-redesign',
+    title: 'E-commerce Redesign',
+    category: 'Web Design',
+    coverImage: getImage('p3'),
+    summary: "Complete redesign of an e-commerce platform's UI/UX to improve user flow and increase conversions.",
+    description: "A user-focused redesign to enhance the shopping experience.",
+    projectInfo: { client: 'Shopify Plus', year: 2024, services: 'UI/UX, Web Design' },
+    images: [getImage('p9'), getImage('p18'), getImage('p28')],
+    aiPrompt: { projectName: 'Shopify Plus Redesign', designChoices: 'Clean, intuitive, and mobile-first.', outcomes: 'Increased user engagement and sales.' }
+  },
+  {
+    slug: 'fantasy-art-series',
+    title: 'Fantasy Art Series',
+    category: 'Illustration',
+    coverImage: getImage('p4'),
+    summary: "A series of detailed illustrations for a fantasy novel, bringing the author's world to life.",
+    description: "Creating magical worlds through digital art.",
+    projectInfo: { client: 'Penguin Books', year: 2023, services: 'Illustration, Book Cover' },
+    images: [getImage('p11'), getImage('p19'), getImage('p25'), getImage('p29')],
+    aiPrompt: { projectName: 'Novel Illustrations', designChoices: 'Rich textures and atmospheric lighting.', outcomes: 'Visually stunning book series.' }
+  },
+  {
+    slug: 'event-promotion-pack',
+    title: 'Event Promotion Pack',
+    category: 'Branding',
+    coverImage: getImage('p5'),
+    summary: "Design of promotional materials for a major music festival, including flyers, posters, and social media assets.",
+    description: "Creating a vibrant and energetic visual identity for a music festival.",
+    projectInfo: { client: 'Music Fest', year: 2024, services: 'Flyers, Posters, Social Media Graphics' },
+    images: [getImage('p7'), getImage('p14'), getImage('p17')],
+    aiPrompt: { projectName: 'Music Fest Promo', designChoices: 'Bold typography and dynamic imagery.', outcomes: 'Sold-out event.' }
+  },
+  {
+    slug: 'automotive-branding',
+    title: 'Automotive Branding',
+    category: 'Branding',
+    coverImage: getImage('p6'),
+    summary: "Eye-catching vehicle wraps and car branding for a local business to increase brand visibility on the go.",
+    description: "Mobile advertising through creative car branding.",
+    projectInfo: { client: 'Local Motors', year: 2023, services: 'Car Branding, Vehicle Graphics' },
+    images: [getImage('p22')],
+    aiPrompt: { projectName: 'Local Motors Branding', designChoices: 'Sleek lines and a memorable logo.', outcomes: 'Increased local brand recognition.' }
+  },
+  {
+    slug: 'restaurant-branding-package',
+    title: 'Restaurant Branding Package',
+    category: 'Branding',
+    coverImage: getImage('p31'),
+    summary: "Complete branding for a new restaurant, including menu design, packaging, and signage.",
+    description: "Creating a delicious brand identity from scratch.",
+    projectInfo: { client: 'The Corner Bistro', year: 2024, services: 'Menu Design, Packaging, Signage' },
+    images: [getImage('p8'), getImage('p23'), getImage('p26')],
+    aiPrompt: { projectName: 'Bistro Branding', designChoices: 'Warm, rustic, and inviting.', outcomes: 'Successful restaurant launch.' }
+  },
+  {
+    slug: 'app-ui-kit',
+    title: 'App UI Kit',
+    category: 'Web Design',
+    coverImage: getImage('p21'),
+    summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
+    description: "A complete design system for a consistent and scalable app.",
+    projectInfo: { client: 'ConnectApp', year: 2023, services: 'UI Design, Iconography' },
+    images: [getImage('p32'), getImage('p27')],
+    aiPrompt: { projectName: 'ConnectApp UI Kit', designChoices: 'Modern, clean, and highly usable.', outcomes: 'Streamlined development process.' }
+  },
+  {
+    slug: 'apparel-graphics',
+    title: 'Apparel Graphics',
+    category: 'Illustration',
+    coverImage: getImage('p15'),
+    summary: "Created a collection of graphic designs for a streetwear apparel brand.",
+    description: "Unique and trendy designs for t-shirts and other apparel.",
+    projectInfo: { client: 'Urban Wear', year: 2024, services: 'T-shirt Design, Illustration' },
+    images: [getImage('p30'), getImage('p33')],
+    aiPrompt: { projectName: 'Urban Wear Graphics', designChoices: 'Edgy, graphic, and inspired by street culture.', outcomes: 'Popular new clothing line.' }
+  },
+  {
+    slug: 'corporate-brochure',
+    title: 'Corporate Brochure',
+    category: 'Branding',
+    coverImage: getImage('p16'),
+    summary: "Designed a professional and informative brochure for a corporate client to use for marketing and sales.",
+    description: "A high-quality print piece to showcase company services.",
+    projectInfo: { client: 'Global Corp', year: 2023, services: 'Brochure Design, Print Layout' },
+    images: [getImage('p12'), getImage('p24')],
+    aiPrompt: { projectName: 'Global Corp Brochure', designChoices: 'Clean layout, professional typography, and impactful imagery.', outcomes: 'Effective sales tool.' }
+  }
 ];
 
 export const featuredProjects = projects.slice(0, 3);

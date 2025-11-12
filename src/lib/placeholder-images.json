@@ -95,6 +95,204 @@
       "description": "Avatar for Emily White.",
       "imageUrl": "/pics16.jpeg",
       "imageHint": "person smiling"
+    },
+    {
+      "id": "p1",
+      "description": "Project image 1",
+      "imageUrl": "/p1.jpeg",
+      "imageHint": "branding concept"
+    },
+    {
+      "id": "p2",
+      "description": "Project image 2",
+      "imageUrl": "/p2.jpeg",
+      "imageHint": "logo design"
+    },
+    {
+      "id": "p3",
+      "description": "Project image 3",
+      "imageUrl": "/p3.jpeg",
+      "imageHint": "web design mockup"
+    },
+    {
+      "id": "p4",
+      "description": "Project image 4",
+      "imageUrl": "/p4.jpeg",
+      "imageHint": "illustration art"
+    },
+    {
+      "id": "p5",
+      "description": "Project image 5",
+      "imageUrl": "/p5.jpeg",
+      "imageHint": "flyer design"
+    },
+    {
+      "id": "p6",
+      "description": "Project image 6",
+      "imageUrl": "/p6.jpeg",
+      "imageHint": "car wrap"
+    },
+    {
+      "id": "p7",
+      "description": "Project image 7",
+      "imageUrl": "/p7.jpeg",
+      "imageHint": "billboard ad"
+    },
+    {
+      "id": "p8",
+      "description": "Project image 8",
+      "imageUrl": "/p8.jpeg",
+      "imageHint": "packaging design"
+    },
+    {
+      "id": "p9",
+      "description": "Project image 9",
+      "imageUrl": "/p9.jpeg",
+      "imageHint": "mobile app ui"
+    },
+    {
+      "id": "p10",
+      "description": "Project image 10",
+      "imageUrl": "/p10.jpeg",
+      "imageHint": "corporate identity"
+    },
+    {
+      "id": "p11",
+      "description": "Project image 11",
+      "imageUrl": "/p11.jpeg",
+      "imageHint": "character design"
+    },
+    {
+      "id": "p12",
+      "description": "Project image 12",
+      "imageUrl": "/p12.jpeg",
+      "imageHint": "website banner"
+    },
+    {
+      "id": "p13",
+      "description": "Project image 13",
+      "imageUrl": "/p13.jpeg",
+      "imageHint": "business card"
+    },
+    {
+      "id": "p14",
+      "description": "Project image 14",
+      "imageUrl": "/p14.jpeg",
+      "imageHint": "poster design"
+    },
+    {
+      "id": "p15",
+      "description": "Project image 15",
+      "imageUrl": "/p15.jpeg",
+      "imageHint": "t-shirt design"
+    },
+    {
+      "id": "p16",
+      "description": "Project image 16",
+      "imageUrl": "/p16.jpeg",
+      "imageHint": "brochure layout"
+    },
+    {
+      "id": "p17",
+      "description": "Project image 17",
+      "imageUrl": "/p17.jpeg",
+      "imageHint": "social media graphic"
+    },
+    {
+      "id": "p18",
+      "description": "Project image 18",
+      "imageUrl": "/p18.jpeg",
+      "imageHint": "landing page"
+    },
+    {
+      "id": "p19",
+      "description": "Project image 19",
+      "imageUrl": "/p19.jpeg",
+      "imageHint": "abstract illustration"
+    },
+    {
+      "id": "p20",
+      "description": "Project image 20",
+      "imageUrl": "/p20.jpeg",
+      "imageHint": "brand manual"
+    },
+    {
+      "id": "p21",
+      "description": "Project image 21",
+      "imageUrl": "/p21.jpeg",
+      "imageHint": "icon set"
+    },
+    {
+      "id": "p22",
+      "description": "Project image 22",
+      "imageUrl": "/p22.jpeg",
+      "imageHint": "vehicle graphics"
+    },
+    {
+      "id": "p23",
+      "description": "Project image 23",
+      "imageUrl": "/p23.jpeg",
+      "imageHint": "product label"
+    },
+    {
+      "id": "p24",
+      "description": "Project image 24",
+      "imageUrl": "/p24.jpeg",
+      "imageHint": "infographic design"
+    },
+    {
+      "id": "p25",
+      "description": "Project image 25",
+      "imageUrl": "/p25.jpeg",
+      "imageHint": "digital painting"
+    },
+    {
+      "id": "p26",
+      "description": "Project image 26",
+      "imageUrl": "/p26.jpeg",
+      "imageHint": "storefront sign"
+    },
+    {
+      "id": "p27",
+      "description": "Project image 27",
+      "imageUrl": "/p27.jpeg",
+      "imageHint": "email newsletter"
+    },
+    {
+      "id": "p28",
+      "description": "Project image 28",
+      "imageUrl": "/p28.jpeg",
+      "imageHint": "dashboard ui"
+    },
+    {
+      "id": "p29",
+      "description": "Project image 29",
+      "imageUrl": "/p29.jpeg",
+      "imageHint": "book cover"
+    },
+    {
+      "id": "p30",
+      "description": "Project image 30",
+      "imageUrl": "/p30.jpeg",
+      "imageHint": "pattern design"
+    },
+    {
+      "id": "p31",
+      "description": "Project image 31",
+      "imageUrl": "/p31.jpeg",
+      "imageHint": "menu design"
+    },
+    {
+      "id": "p32",
+      "description": "Project image 32",
+      "imageUrl": "/p32.jpeg",
+      "imageHint": "app icon"
+    },
+    {
+      "id": "p33",
+      "description": "Project image 33",
+      "imageUrl": "/p33.jpeg",
+      "imageHint": "vector art"
     }
   ]
 }
