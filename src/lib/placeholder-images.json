@@ -7,6 +7,12 @@
       "imageHint": "designer portrait"
     },
     {
+      "id": "creativelink-logo",
+      "description": "Creativelink logo",
+      "imageUrl": "/my_logo.png",
+      "imageHint": "company logo"
+    },
+    {
       "id": "project-cover-zenith",
       "description": "Cover image for Project Zenith.",
       "imageUrl": "/srfit.jpeg",

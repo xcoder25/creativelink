@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function AboutPage() {
   const aboutImage = placeholderImages.find(p => p.id === 'designer-portrait');
-  const studioImage = placeholderImages.find(p => p.id === 'p1');
+  const studioImage = placeholderImages.find(p => p.id === 'creativelink-logo');
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -60,15 +60,15 @@ export default function AboutPage() {
                 At CreativeLink, we don’t just design — we create connections.
             </p>
         </div>
-        <div className="md:col-span-2 animate-fade-in md:order-first">
+        <div className="md:col-span-2 animate-fade-in md:order-first flex items-center justify-center">
           {studioImage && (
             <Image
               src={studioImage.imageUrl}
               alt="CreativeLink studio branding"
               data-ai-hint={studioImage.imageHint}
-              width={400}
-              height={500}
-              className="rounded-lg object-cover shadow-lg w-full"
+              width={280}
+              height={80}
+              className="rounded-lg"
             />
           )}
         </div>
