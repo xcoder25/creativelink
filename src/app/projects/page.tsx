@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+
 import { projects } from '@/lib/data';
 import type { ProjectCategory } from '@/lib/types';
+import ProjectCard from '@/components/project-card';
+import CategoryFilters from '@/components/category-filters';
 
 export const metadata = {
   title: 'Projects | Creativelink',
@@ -13,16 +14,16 @@ export default function ProjectsPage({
 }: {
   searchParams?: { category?: ProjectCategory };
 }) {
+  const categories = [...new Set(projects.map(p => p.category))] as ProjectCategory[];
+  const selectedCategory = searchParams?.category;
 
-  const allImages = projects.flatMap(project => [
-    { ...project.coverImage, slug: project.slug },
-    ...project.images.map(img => ({ ...img, slug: project.slug }))
-  ]);
-
+  const filteredProjects = selectedCategory
+    ? projects.filter((project) => project.category === selectedCategory)
+    : projects;
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <header className="text-center mb-12 animate-fade-in-up">
+      <header className="mb-12 text-center animate-fade-in-up">
         <h1 className="font-headline text-5xl font-bold tracking-tight md:text-6xl">
           My Work
         </h1>
@@ -30,30 +31,24 @@ export default function ProjectsPage({
           A showcase of my passion for creating beautiful and functional designs.
         </p>
       </header>
+
+      <div className="flex justify-center mb-12 animate-fade-in-up">
+        <CategoryFilters categories={categories} />
+      </div>
       
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        {allImages.map((image, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProjects.map((project, index) => (
           <div
-            key={`${image.slug}-${index}`}
-            className="animate-fade-in-up group"
-            style={{ animationDelay: `${index * 50}ms` }}
+            key={project.slug}
+            className="animate-fade-in-up"
+            style={{ animationDelay: `${index * 100}ms` }}
           >
-            <Link href={`/projects/${image.slug}`}>
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1">
-                <Image
-                  src={image.src}
-                  alt={image.hint || 'Project image'}
-                  data-ai-hint={image.hint}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </Link>
+            <ProjectCard project={project} />
           </div>
         ))}
-        {allImages.length === 0 && (
+        {filteredProjects.length === 0 && (
           <p className="col-span-full text-center text-muted-foreground">
-            No projects found.
+            No projects found for this category.
           </p>
         )}
       </div>
