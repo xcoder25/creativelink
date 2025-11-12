@@ -76,7 +76,7 @@
     background-size: 100% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-wave-vertical 8s ease-in-out infinite;
+    animation: gradient-wave-vertical 12s ease-in-out infinite;
   }
 }
 

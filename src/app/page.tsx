@@ -13,7 +13,7 @@ import LoadingLink from '@/components/loading-link';
 
 const { placeholderImages } = imageData;
 
-const WavyText = ({ text, delayStep = 0.05 }: { text: string; delayStep?: number }) => {
+const WavyText = ({ text, delayStep = 0.07 }: { text: string; delayStep?: number }) => {
   return (
     <>
       {text.split('').map((char, index) => (
@@ -22,7 +22,7 @@ const WavyText = ({ text, delayStep = 0.05 }: { text: string; delayStep?: number
           className="inline-block animate-fluid-gradient"
           style={{ animationDelay: `${index * delayStep}s` }}
         >
-          {char}
+          {char === ' ' ? '\u00A0' : char}
         </span>
       ))}
     </>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="animate-fade-in-up">
           <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
             <span className="inline-block whitespace-nowrap"><WavyText text="Innovate." /></span>
-            <span className="inline-block whitespace-nowrap"><WavyText text="Connect." delayStep={0.03} /></span>
+            <span className="inline-block whitespace-nowrap"><WavyText text="Connect." delayStep={0.05} /></span>
             <span className="inline-block whitespace-nowrap"><WavyText text="Inspire." /></span>
           </h1>
           <div className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl" style={{ animationDelay: '0.4s' }}>
