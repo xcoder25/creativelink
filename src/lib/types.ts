@@ -1,6 +1,6 @@
 import type { StaticImageData } from "next/image";
 
-export type ProjectCategory = 'Branding' | 'Web Design' | 'Illustration';
+export type ProjectCategory = 'Branding' | 'Print Design' | 'Illustration';
 
 export type Project = {
   slug: string;

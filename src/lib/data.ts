@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     slug: 'nomad-travel-app',
     title: 'Nomad Travel App',
-    category: 'Web Design',
+    category: 'Branding',
     coverImage: getImage('project-cover-nomad'),
     summary: "Designed a user-centric travel planning app, Nomad, focusing on intuitive navigation and a visually stunning interface. The design boosted user engagement by 60% and secured a 'Best New App' feature on the App Store, thanks to its seamless booking process and personalized recommendations.",
     description: "Nomad is a travel planning application designed for the modern adventurer. The challenge was to create an interface that was both feature-rich and incredibly easy to use. We focused on a user-centric design process, from wireframing and prototyping to final UI design, ensuring every interaction was intuitive and enjoyable.",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
   {
     slug: 'e-commerce-redesign',
     title: 'E-commerce Redesign',
-    category: 'Web Design',
+    category: 'Branding',
     coverImage: getImage('p3'),
     summary: "Complete redesign of an e-commerce platform's UI/UX to improve user flow and increase conversions.",
     description: "A user-focused redesign to enhance the shopping experience.",
@@ -136,7 +136,7 @@ export const projects: Project[] = [
   {
     slug: 'event-promotion-pack',
     title: 'Event Promotion Pack',
-    category: 'Branding',
+    category: 'Print Design',
     coverImage: getImage('p5'),
     summary: "Design of promotional materials for a major music festival, including flyers, posters, and social media assets.",
     description: "Creating a vibrant and energetic visual identity for a music festival.",
@@ -169,7 +169,7 @@ export const projects: Project[] = [
   {
     slug: 'app-ui-kit',
     title: 'App UI Kit',
-    category: 'Web Design',
+    category: 'Branding',
     coverImage: getImage('p21'),
     summary: "Developed a comprehensive UI kit with icons, components, and design patterns for a new mobile application.",
     description: "A complete design system for a consistent and scalable app.",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
   {
     slug: 'corporate-brochure',
     title: 'Corporate Brochure',
-    category: 'Branding',
+    category: 'Print Design',
     coverImage: getImage('p16'),
     summary: "Designed a professional and informative brochure for a corporate client to use for marketing and sales.",
     description: "A high-quality print piece to showcase company services.",
