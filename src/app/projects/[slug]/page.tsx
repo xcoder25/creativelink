@@ -4,7 +4,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { projects } from '@/lib/data';
-import { slugify } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import {
   Carousel,
@@ -17,11 +16,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Quote } from 'lucide-react';
 import { generateProjectSummary } from '@/ai/flows/ai-project-summarization';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, use } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
-export default function ProjectDetailsPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default function ProjectDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
+  const project = projects.find((p) => p.slug === slug);
   const [aiSummary, setAiSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 

@@ -32,13 +32,15 @@ export default function RootLayout({
         )}
       >
         <LoadingProvider>
-          <PageLoader>
-            <Header />
-            <main className="flex-grow">
-              <Suspense>{children}</Suspense>
-            </main>
-            <Footer />
-          </PageLoader>
+          <Suspense fallback={<div className="min-h-screen bg-background" />}>
+            <PageLoader>
+              <Header />
+              <main className="flex-grow">
+                <Suspense>{children}</Suspense>
+              </main>
+              <Footer />
+            </PageLoader>
+          </Suspense>
         </LoadingProvider>
         <Toaster />
       </body>

@@ -1,4 +1,5 @@
 
+import { Suspense } from 'react';
 import { projects } from '@/lib/data';
 import type { ProjectCategory } from '@/lib/types';
 import ProjectCard from '@/components/project-card';
@@ -9,13 +10,14 @@ export const metadata = {
   description: 'Explore a collection of branding, web design, and illustration projects.',
 };
 
-export default function ProjectsPage({
+export default async function ProjectsPage({
   searchParams,
 }: {
-  searchParams?: { category?: ProjectCategory };
+  searchParams?: Promise<{ category?: ProjectCategory }>;
 }) {
   const categories = [...new Set(projects.map(p => p.category))] as ProjectCategory[];
-  const selectedCategory = searchParams?.category;
+  const resolvedSearchParams = await searchParams;
+  const selectedCategory = resolvedSearchParams?.category;
 
   const filteredProjects = selectedCategory
     ? projects.filter((project) => project.category === selectedCategory)
@@ -33,7 +35,9 @@ export default function ProjectsPage({
       </header>
 
       <div className="flex justify-center mb-12 animate-fade-in-up">
-        <CategoryFilters categories={categories} />
+        <Suspense fallback={<div className="flex flex-wrap gap-2 rounded-lg bg-secondary p-2 h-10 w-64" />}>
+          <CategoryFilters categories={categories} />
+        </Suspense>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">

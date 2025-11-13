@@ -139,7 +139,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         'spin': 'spin 1.5s linear infinite',
-        'gradient-wave-vertical': 'gradient-wave-vertical 8s linear infinite',
+        'fluid-gradient': 'gradient-wave-vertical 12s ease-in-out',
         'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         blink: 'blink 0.7s infinite',
       },

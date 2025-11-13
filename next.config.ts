@@ -2,6 +2,8 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // Note: These settings allow builds to proceed even with TypeScript/ESLint errors
+  // Consider removing these in production after fixing all errors
   typescript: {
     ignoreBuildErrors: true,
   },
